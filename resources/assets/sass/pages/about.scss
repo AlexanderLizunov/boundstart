@@ -1,0 +1,83 @@
+@import "helpers/media";
+@import "helpers/mixin-bootstrap";
+@import "helpers/foundation";
+
+@import "helpers/generic-hack";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/index/first-screen";
+@import "partials/about/first-screen";
+@import "partials/about/details";
+@import "partials/about/team";
+@import "partials/about/photo";
+
+.footer-section {
+	margin-top: -3px;
+}
+
+.scroll-down-button {
+	@include phones_landscape {
+		display: none;
+	}
+}
+
+.language-ru {
+	.line {
+		height: 1616px;
+	}
+	.details-label-second {
+		left: -256px;
+		@include tablets {
+			left: -200px;
+		}
+	}
+	.details-label-third {
+		left: -120px;
+		@include tablets {
+			left: -200px;
+		}
+	}
+	.details-label-fourth {
+		left: 35px;
+		@include laptop_M {
+			left: 15px;
+		}
+		@include tablets {
+			left: -200px;
+		}
+	}
+	.details-item-sixth {
+		@include laptop_M {
+			margin-top: 160px;
+		}
+	}
+	.details-label-sixth {
+		left: -100px;
+		height: 100px;
+		width: 100px;
+		svg {
+			height: 100%;
+			width: 100%;
+		}
+		//@include laptop_L {
+		//  top: -20px;
+		//}
+		@include laptop_M {
+			left: -140px;
+			top: 20px
+		}
+		@include tablets {
+			top: 50%;
+		}
+	}
+	.details-item-label {
+		@include phones_L {
+			margin: auto;
+			position: relative;
+			left: auto;
+			right: auto;
+			top: auto;
+			transform: none;
+		}
+	}
+}

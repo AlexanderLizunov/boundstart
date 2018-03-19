@@ -1,0 +1,619 @@
+.steps-section {
+	position: relative;
+}
+
+.steps-cover {
+	overflow: hidden;
+}
+
+.steps-container {
+	position: relative;
+	background-image: linear-gradient(75deg, rgba(241, 242, 247, 0.4) 0%, rgba(241, 242, 247, 0.4) 2%, rgba(241, 242, 247, 0.4) 28%, rgba(245, 250, 250, 0.4) 100%);
+	padding-top: 230px;
+	padding-bottom: 300px;
+	@include laptop_S {
+		padding-top: 180px;
+		padding-bottom: 200px;
+	}
+	@include phones_L {
+		padding-top: 160px;
+		padding-bottom: 360px;
+	}
+}
+
+.content-cover {
+	width: 50%;
+	display: inline-block;
+	text-align: left;
+	@include tablets {
+		width: 60%;
+	}
+	@include phones_L {
+		width: 100%;
+		padding-left: 40px;
+	}
+}
+
+.content-block {
+	display: inline-block;
+	max-width: 530px;
+	width: 92%;
+	text-align: left;
+	position: relative;
+	z-index: 5;
+	
+	ul {
+		margin-top: 16px;
+		margin-left: 3px;
+		padding-left: 15px;
+		
+	}
+	@include tablets {
+		margin-left: 20px;
+	}
+	@include phones_L {
+		max-width: none;
+		margin-left: 0;
+	}
+}
+
+.content-block__second {
+	max-width: 700px;
+	padding-left: 200px;
+	width: 100%;
+	@include laptop_L {
+		width: 100%;
+	}
+	
+	@include laptop_S {
+		padding-left: 150px;
+	}
+	@include tablets {
+		margin-left: 0;
+		padding-left: 40px;
+	}
+	@include phones_L {
+		padding-left: 0;
+	}
+}
+
+h2 {
+	text-align: left;
+	color: rgb(52, 46, 46);
+	font-family: "Open Sans", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	position: relative;
+	display: block;
+	margin-right: 0;
+	&:before {
+		width: 100%;
+		height: 3px;
+		background-color: #77c5fa;
+		content: '';
+		position: absolute;
+		top: 20px;
+		left: -103%;
+		@include phones_L {
+			top: -80px;
+			left: -85%;
+		}
+	}
+	@include laptop_L {
+		max-width: 468px;
+		font-size: 28px;
+	}
+	@include laptop_S {
+		max-width: 400px;
+	}
+}
+
+.steps-title_small {
+	margin-top: 45px;
+	color: #fe2189;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	padding-left: 33px;
+	visibility: hidden;
+	@include laptop_L {
+		margin-top: 35px;
+	}
+	@include phones_L {
+		font-size: 21px;
+	}
+}
+
+.steps-list_item {
+	color: #342e2e;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	padding-left: 15px;
+	line-height: 20px;
+	@include laptop_L {
+		margin-top: 5px;
+	}
+	
+	@include phones_landscape {
+		font-size: 22px;
+	}
+	@include phones_S {
+		margin-top: 9px;
+	}
+}
+
+.step-block_img {
+	position: absolute;
+	left: -96px;
+	top: -65px;
+	height: 160px;
+	opacity: .05;
+	z-index: -1;
+	@include laptop_M {
+		left: -50px;
+	}
+	@include laptop_S {
+		left: -30px;
+	}
+	@include phones_L {
+		height: 48px;
+		left: 0;
+		opacity: .16;
+	}
+}
+
+.step-block_img__second {
+	left: auto;
+	right: -80px;
+	@include laptop_M {
+		right: -50px;
+	}
+	@include laptop_S {
+		right: -30px;
+	}
+	@include phones_L {
+		top: -80px;
+		right: auto;
+		left: 0;
+	}
+}
+
+.step-container_img {
+	position: absolute;
+	height: 396px;
+	width: auto;
+	left: 63%;
+	top: -80px;
+	@include laptop_L {
+		height: 330px;
+		left: 60%;
+	}
+	@include laptop_M {
+		height: 300px;
+		left: 60%;
+	}
+	@include laptop_S {
+		top: -50px;
+		height: 270px;
+		left: 58%
+	}
+	@include tablets {
+		height: 300px;
+		left: 63%;
+		bottom: auto;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@include phones_L {
+		height: 260px;
+		bottom: -460px;
+		top: auto;
+		left: 40%;
+	}
+	@include phones_M {
+		left: 30%;
+	}
+}
+
+.step-container__right {
+	text-align: right;
+	background: none;
+	padding-bottom: 320px;
+	width: 100%;
+	max-width: 1500px;
+	@include laptop_S {
+		padding-bottom: 200px;
+	}
+	@include tablets {
+		padding-bottom: 60px;
+	}
+	@include phones_L {
+		padding-bottom: 360px;
+		padding-top: 96px;
+	}
+	@include phones_M {
+		padding-bottom: 320px;
+	}
+}
+
+.step-container_img__left {
+	height: 530px;
+	top: 0;
+	left: auto;
+	right: 54%;
+	@include laptop_L {
+		right: 50%;
+		height: 420px;
+		top: 100px;
+	}
+	@include laptop_M {
+		height: 384px;
+		top: 150px;
+		right: 49%;
+	}
+	@include laptop_S {
+		height: 330px;
+	}
+	@include tablets {
+		height: 240px;
+		left: -170px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@include phones_L {
+		top: auto;
+		left: auto;
+		bottom: -90px;
+		right: 30%;
+		height: 220px;
+	}
+}
+
+.step-title__right {
+	&:before {
+		width: 100%;
+		height: 3px;
+		background-color: #77c5fa;
+		content: '';
+		position: absolute;
+		left: auto;
+		top: 20px;
+		right: -103%;
+		@include tablets {
+			right: -97%;
+		}
+		@include phones_L {
+			right: auto;
+			top: -98px;
+			left: -86%;
+		}
+	}
+}
+
+.step-container__last {
+	background: none;
+	padding-top: 0;
+	padding-bottom: 330px;
+	@include laptop_S {
+		padding-bottom: 300px;
+	}
+	@include phones_L {
+		padding-top: 110px;
+		padding-bottom: 360px;
+	}
+}
+
+.step-container_img__last {
+	height: 532px;
+	left: 64%;
+	top: -130px;
+	z-index: 0;
+	@include laptop_L {
+		top: -150px;
+		left: 65%;
+	}
+	@include laptop_S {
+		height: 400px;
+		top: -20px;
+		left: 68%
+	}
+	@include tablets {
+		top: 50%;
+	}
+	@include phones_landscape {
+		left: 68%;
+	}
+	@include phones_L {
+		height: 240px;
+		top: 75%;
+		left: 32%;
+	}
+}
+
+.step-circle-cover {
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	top: -43px;
+	background-size: 100% 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 4;
+	background-image: url("../img/images/half-top.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	@include laptop_S {
+		background-size: 100%;
+	}
+	@include tablets {
+		display: none;
+	}
+}
+
+.step-circle {
+	display: block;
+	margin: auto;
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	line-height: 68px;
+	border-radius: 150px;
+	top: 9px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: #fe2189;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: white;
+	transition: .5s;
+	box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.18);
+	background-size: 100%;
+	z-index: 4;
+	@include tablets {
+		height: 64px;
+		width: 64px;
+		line-height: 64px;
+	}
+	@include phones_landscape {
+		height: 72px;
+		width: 72px;
+		line-height: 72px;
+	}
+	@include phones_L {
+		font-size: 17px;
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+	}
+	&:after {
+		width: 38px;
+		height: .1em;
+		background-color: #34c5fb;
+		content: '';
+		position: absolute;
+		right: -38px;
+		top: 50%;
+		display: none;
+		@include tablets {
+			display: block;
+		}
+		@include phones_landscape {
+			width: 60px;
+			right: -60px;
+		}
+		@include phones_L {
+			height: .1em;
+		}
+	}
+}
+
+.line {
+	position: absolute;
+	top: 12px;
+	stroke-width: 2px;
+	fill: none;
+	transition: .7s;
+	stroke-dasharray: 0 2553;
+	height: 1930px;
+	width: auto;
+	right: auto;
+	left: calc(50% - 45px);
+	transform: translateZ(0);
+	-webkit-transform: scale(1);
+	z-index: 3;
+	@include laptop_S {
+		height: 1700px;
+	}
+	@include tablets {
+		display: none;
+	}
+	g {
+		transition: 0.5s;
+	}
+	
+}
+
+.st2 {
+	transition: 1s;
+	stroke-width: 2px;
+	stroke-dasharray: 10 10;
+}
+
+.circle-second {
+	top: 226px;
+	left: auto;
+	transform: none;
+	right: calc(50% + 10px);
+	@include laptop_S {
+		top: 190px;
+	}
+	@include tablets {
+		top: 230px;
+		right: calc(35% + 42px);
+	}
+	@include phones_landscape {
+		top: 210px;
+		right: calc(35% + 64px);
+	}
+	@include phones_L {
+		top: 530px;
+		right: auto;
+		left: calc(40% - 110px);
+	}
+	@include phones_M {
+		top: 525px;
+		left: calc(30% - 105px);
+	}
+	@include phones_S {
+		top: 570px;
+		left: calc(30% - 105px);
+	}
+	
+}
+
+.circle-third {
+	transform: none;
+	top: 977px;
+	left: auto;
+	right: calc(50% - 160px);
+	@include laptop_S {
+		top: 800px;
+		right: calc(50% - 120px);
+	}
+	@include tablets {
+		top: 725px;
+		right: calc(81% - 120px);
+		&:after {
+			top: auto;
+			height: 35px;
+			width: .1rem;
+			bottom: -35px;
+			right: 50%;
+		}
+	}
+	@include phones_landscape {
+		top: 743px;
+		&:after {
+			top: auto;
+			height: 55px;
+			bottom: -55px;
+			width: .1em;
+		}
+	}
+	@include phones_L {
+		top: 1390px;
+		right: calc(30% - 90px);
+		&:after {
+			top: 50%;
+			height: .1em;
+			width: 55px;
+			bottom: auto;
+			right: auto;
+			left: -55px;
+		}
+	}
+	@include phones_M {
+		top: 1350px
+	}
+	@include phones_S {
+		top: 1360px;
+		right: calc(30% - 93px);
+	}
+}
+
+.circle-fourth {
+	transform: none;
+	top: 1538px;
+	left: auto;
+	right: calc(50% - 60px);
+	@include laptop_S {
+		top: 1315px;
+		right: calc(50% - 50px);
+	}
+	@include tablets {
+		top: 1300px;
+		right: calc(50% - 136px);
+	}
+	@include phones_landscape {
+		top: 1340px;
+		right: calc(50% - 116px);
+	}
+	@include phones_L {
+		display: none;
+	}
+}
+
+.circle-fifth {
+	transform: none;
+	top: 1870px;
+	left: auto;
+	right: calc(50% - 230px);
+	@include laptop_S {
+		top: 1630px;
+		right: calc(50% - 220px);
+	}
+	@include tablets {
+		top: 1480px;
+		right: calc(50% - 94px);
+	}
+	@include phones_landscape {
+		top: 1570px;
+		right: calc(50% - 74px);
+	}
+	@include phones_L {
+		height: 80px;
+		width: 80px;
+		line-height: 80px;
+		top: 2000px;
+		right: auto;
+		left: calc(32% - 105px);
+	}
+	@include phones_M {
+		top: 1980px;
+	}
+	@include phones_S {
+		top: 2000px;
+	}
+}
+
+.circle__active {
+	color: white;
+	background-image: linear-gradient(117deg, #425fd2 0%, #6147c2 100%);
+}
+
+.circle-2__active {
+	color: white;
+	background-image: linear-gradient(-54deg, #a63fbb 0%, #6756c4 100%, #6756c4 100%);
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.circle-3__active {
+	color: white;
+	background-image: linear-gradient(-54deg, #f570b8 0%, #9836bc 100%, #9836bc 100%);
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.circle-4__active {
+	color: white;
+	background-image: linear-gradient(-54deg, #c640a3 0%, #c640a3 0%, #f570b8 100%);
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.circle-5__active {
+	color: white;
+	background-image: linear-gradient(-54deg, #f570b8 0%, #ed3b9f 100%, #ed3b9f 100%);
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.line-1__active {
+	stroke-dasharray: 2553 2553;
+}
+
+#triangle {
+	transition: .3s;
+}

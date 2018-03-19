@@ -1,0 +1,139 @@
+@import "helpers/media";
+@import "helpers/mixin-bootstrap";
+@import "helpers/modals-bootstrap";
+@import "helpers/foundation";
+
+@import "helpers/generic-hack";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/index/first-screen";
+@import "partials/main-screen-form-block";
+@import "partials/index/steps";
+@import "partials/index/portfolio";
+@import "partials/index/testimonials";
+@import "partials/who-can-use";
+@import "partials/index/team";
+@import "partials/callback-form-block";
+@import "partials/modals/get-demo";
+
+.scroll-down-button {
+	display: none;
+}
+
+.language-ru {
+	h2 {
+		font-size: 26px;
+		@include laptop_L {
+			font-size: 24px;
+		}
+		@include laptop_S {
+			font-size: 20px;
+		}
+		@include tablets {
+			font-size: 1.55rem;
+		}
+		@include phones_landscape {
+			font-size: 1.4rem;
+		}
+	}
+	.works-section {
+		@include phones_L {
+			background-size: 100%;
+		}
+	}
+	.step-container__right {
+		padding-bottom: 250px;
+	}
+	.slider-content-block {
+		@include phones_M {
+			min-height: 490px;
+		}
+		@include phones_S {
+			min-height: 480px;
+		}
+	}
+	.circle-second {
+		@include tablets {
+			top: 240px
+		}
+		@include phones_landscape {
+			top: 180px
+		}
+		@include phones_L {
+			top: 590px
+		}
+		@include phones_S {
+			top: 660px;
+		}
+	}
+	.circle-third {
+		@include tablets {
+			top: 892px
+		}
+		@include phones_landscape {
+			top: 822px
+		}
+		@include phones_L {
+			top: 1300px;
+		}
+		@include phones_M {
+			top: 1340px;
+		}
+		@include phones_S {
+			top: 1480px;
+		}
+	}
+	.circle-fourth {
+		top: 1400px;
+		@include tablets {
+			top: 1508px;
+		}
+	}
+	.circle-fifth {
+		@include tablets {
+			top: 1708px;
+		}
+		@include phones_L {
+			top: 1878px;
+		}
+		@include phones_M {
+			top: 125rem;
+		}
+		@include phones_S {
+			top: 135rem;
+		}
+	}
+	@include phones_S {
+		.navigation-list {
+			li {
+				margin-left: 0;
+				margin-right: 0;
+				button {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	.quote-text {
+		height: auto;
+		min-height: 200px;
+		@include laptop_M {
+			min-height: 240px;
+		}
+		@include laptop_M {
+			min-height: 270px;
+		}
+		@include tablets {
+			min-height: 310px;
+		}
+		@include phones_L {
+			min-height: 340px;
+		}
+		@include phones_M {
+			min-height: 360px;
+		}
+		@include phones_S {
+			min-height: 320px;
+		}
+	}
+}

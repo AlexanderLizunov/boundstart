@@ -1,0 +1,47 @@
+.photo-section{
+	position: relative;
+	background-color: #f7f9fb;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	//padding-bottom: 80px;
+}
+.photo-line-block{
+	min-width: 3000px;
+	margin-bottom: 7px;
+	height: 680px;
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	@include screenTo2000{
+		height: 515px;
+	}
+	@include laptop_L{
+		height: 500px;
+	}
+	@include laptop_M{
+		height: 420px;
+	}
+	@include laptop_S{
+		height: 320px;
+	}
+	@include tablets{
+		height: 250px;
+	}
+	@include phones_L{
+		height: 150px;
+	}
+	@include phones_M{
+		height: 130px;
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.photo-image{
+	height: 100%;
+	width: auto;
+	margin-right: 4px;
+}

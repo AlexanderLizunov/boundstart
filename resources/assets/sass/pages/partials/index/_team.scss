@@ -1,0 +1,267 @@
+.team-section {
+	background-color: #f7f9fb;
+	overflow: hidden;
+}
+
+.team-container {
+	padding: 185px 72px 160px;
+	text-align: right;
+	@include laptop_L {
+		padding: 185px 0 160px;
+	}
+	@include laptop_S {
+		padding: 100px 72px 160px;
+	}
+	@include tablets {
+		padding: 95px 0 80px;
+	}
+}
+
+.team-title-block {
+	width: 40%;
+	max-width: 312px;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	@include phones_L {
+		display: block;
+		width: auto;
+		padding-left: 25px;
+		max-width: 400px;
+	}
+}
+
+.team-title {
+	color: #342e2e;
+	font-family: "Open Sans", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	&:before {
+		right: -95%;
+	}
+	@include phones_L {
+		font-size: 42px;
+		&:before {
+			right: -80%;
+		}
+	}
+}
+
+.team-comment {
+	margin-top: 14px;
+	color: #111;
+	font-family: "Open Sans", sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	@include phones_L {
+		font-size: 26px;
+	}
+}
+
+.team-bg-image {
+	position: absolute;
+	height: 175px;
+	width: auto;
+	right: -144px;
+	top: -72px;
+	@include tablets {
+		height: 140px;
+		right: -62px;
+	}
+	@include phones_L {
+		right: -5.8rem;
+	}
+	@include phones_S {
+		display: none;
+	}
+}
+
+.gallery-block {
+	text-align: left;
+	position: relative;
+	margin-top: 32px;
+	@include laptop_S {
+		margin-top: 0;
+	}
+	@include phones_L {
+		text-align: center;
+	}
+}
+
+.gallery-item {
+	margin-top: 96px;
+	margin-right: 96px;
+	padding: 264px 0 10px 56px;
+	background-color: white;
+	border-radius: 5px 0px 0px;
+	box-shadow: 2px 2px 12px 3px rgba(0, 0, 0, .02);
+	display: inline-block;
+	width: 30%;
+	max-width: 296px;
+	vertical-align: top;
+	position: relative;
+	&:after {
+		position: absolute;
+		width: 32px;
+		height: 2px;
+		background-color: #4a69d2;
+		bottom: 48px;
+		left: 56px;
+		content: '';
+		z-index: 12;
+		@include phones_L {
+			display: none;
+		}
+	}
+	&:nth-child(2n) {
+		@include phones_L {
+			margin: 0;
+		}
+	}
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	&:nth-child(5) {
+		@include phones_L {
+			margin: 0;
+		}
+	}
+	@include laptop_L {
+		max-width: 250px;
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-right: 112px;
+	}
+	@include laptop_S {
+		margin-right: 112px;
+		&:nth-child(3) {
+			margin-left: 40px;
+		}
+	}
+	@include tablets {
+		width: 34%;
+		&:nth-child(5) {
+			margin-left: 80px;
+		}
+	}
+	@include phones_landscape{
+		margin-right: 100px;
+	}
+	@include phones_L {
+		height: auto;
+		padding: 0;
+		background: transparent;
+		box-shadow: none;
+		text-align: left;
+		width: 40%;
+		&:nth-child(3) {
+			margin-left: 0;
+		}
+		&:nth-child(2n+1) {
+			margin-top: 60px;
+			margin-right: 10px;
+		}
+		&:nth-child(2n) {
+			margin-top: 40px;
+			margin-left: 10px;
+		}
+		&:nth-child(5) {
+			margin-left: 0;
+		}
+	}
+}
+
+.gallery-image {
+	position: absolute;
+	bottom: 32px;
+	left: 72px;
+	z-index: 5;
+	height: 85%;
+	width: auto;
+	@include phones_L {
+		position: relative;
+		bottom: auto;
+		left: auto;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.team-gallery_name {
+	color: #333;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	span {
+		margin-left: 20px;
+		opacity: 0.49;
+		color: #333;
+		font-family: "Open Sans", sans-serif;
+		font-size: 15px;
+		font-weight: 300;
+		@include phones_L {
+			display: block;
+			margin-left: 0;
+			margin-top: 10px;
+		}
+		@include phones_S {
+			font-size: 18px;
+		}
+	}
+	@include phones_L {
+		margin-top: 10px;
+	}
+	@include phones_S {
+		font-size: 19px;
+	}
+}
+
+.gallery-item__low {
+	margin-top: 112px;
+	
+	@include phones_L {
+		margin: 0;
+	}
+}
+
+.gallery-row-2 {
+	margin-left: 76px;
+	margin-right: 0;
+	@include laptop_L {
+		margin-left: 112px;
+	}
+	@include laptop_S {
+		margin-left: 112px;
+	}
+	@include phones_L {
+		margin-left: 0;
+	}
+}
+
+.gallery-link {
+	margin-top: 65px;
+	display: inline-block;
+	position: relative;
+	width: auto;
+	right: 20px;
+	@include laptop_L {
+		right: -60px;
+	}
+	@include laptop_S {
+		right: 86px
+	}
+	@include tablets {
+		bottom: auto;
+		right: -35px;
+	}
+	@include phones_landscape {
+		right: 45px;
+	}
+	@include phones_M {
+		right: 35px;
+	}
+	@include phones_S {
+		right: 30px;
+	}
+}

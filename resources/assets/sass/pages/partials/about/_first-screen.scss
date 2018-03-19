@@ -1,0 +1,33 @@
+.main-section {
+	height: 800px;
+	background-image: url("../img/images/about-bg-3.png");
+	background-position: top left;
+	background-size: 100% 100%;
+	@include laptop_L {
+		background-size: auto 100%;
+	}
+	@include laptop_S {
+		height: 600px;
+	}
+	@include tablets {
+		height: 600px;
+	}
+	@include phones_L {
+		height: 450px;
+	}
+}
+
+.main-img-bg {
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	//width:auto;
+	//transform: none;
+	//top:0;
+	//left:0;
+	
+}
+
+.main-bg-cover {
+	height: 100%;
+}

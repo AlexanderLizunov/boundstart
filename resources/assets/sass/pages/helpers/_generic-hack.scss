@@ -1,0 +1,65 @@
+html {
+	@include laptop_S {
+		font-size: 15px;
+	}
+	@include tablets {
+		font-size: 14px;
+	}
+	@include phones_landscape {
+		font-size: 12px;
+	}
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	line-height: 1;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.custom-container {
+	width: 93.75%;
+	max-width: 1312px;
+	margin: auto;
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	@include laptop_L {
+		max-width: 1140px;
+	}
+	@include laptop_S {
+		max-width: 1024px;
+	}
+	@include tablets {
+		max-width: 720px;
+	}
+}
+
+.clear-fix {
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+.inline-fake {
+	width: 100%;
+	display: inline-block;
+	height: 0;
+	content: "";
+}
+

@@ -1,0 +1,476 @@
+.steps-container {
+	background-image: none;
+}
+
+.step-container-first {
+	padding-top: 310px;
+	padding-bottom: 330px;
+	@include laptop_M {
+		padding-top: 250px;
+		padding-bottom: 250px;
+	}
+	@include tablets {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+
+.step-title-first {
+	margin-bottom: 0;
+}
+
+.step-container-second {
+	background-color: #fafbfb;
+	@include tablets {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+
+.step-container-third {
+	padding-top: 320px;
+	padding-bottom: 360px;
+	@include laptop_M {
+		padding-top: 240px;
+		padding-bottom: 300px;
+	}
+	@include tablets {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	@include phones_L{
+		padding-bottom: 0;
+	}
+}
+
+.step-container-fourth {
+	padding-top: 145px;
+	padding-bottom: 442px;
+	@include laptop_M {
+		padding-bottom: 340px;
+	}
+	@include tablets {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	@include phones_L{
+		padding-top: 80px;
+		padding-bottom: 0;
+	}
+	
+}
+
+.step-container-fifth {
+	padding-top: 210px;
+	padding-bottom: 265px;
+	background-color: #fafbfb;
+	max-width: none;
+	@include tablets {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+
+.step-container-sixth {
+	padding-top: 242px;
+	padding-bottom: 332px;
+	@include laptop_L {
+		padding-top: 200px;
+		padding-bottom: 160px;
+	}
+	@include tablets {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	@include phones_L{
+		padding-bottom: 100px;
+	}
+	
+}
+
+.step-container_img {
+	height: 400px;
+	top: 150px;
+	right: calc(47% + 100px);
+	@include laptop_L {
+		top: 170px;
+		height: 340px;
+		right: 50%;
+	}
+	@include laptop_M {
+		height: 330px;
+	}
+	@include laptop_S {
+		height: 350px;
+		right: 55%;
+	}
+	@include tablets {
+		top: 50%;
+		height: 265px;
+	}
+	@include phones_L {
+		position: relative;
+		top: 0;
+		transform: none;
+		right: auto;
+		left: auto;
+		display: block;
+		margin: 30px auto 0;
+	}
+	
+}
+
+.step-container_image__right {
+	height: 565px;
+	top: 100px;
+	right: auto;
+	left: calc(50% + 80px);
+	@include laptop_L {
+		left: 50%;
+		height: 450px;
+	}
+	@include laptop_S {
+		left: 55%;
+		top: 150px;
+	}
+	@include tablets {
+		top: 50%;
+		height: 350px;
+		left: 60%;
+	}
+}
+
+.step-container-image-third {
+	height: 680px;
+	top: 194px;
+	right: auto;
+	left: 10%;
+	@include laptop_M {
+		top: 90px;
+	}
+	@include tablets {
+		top: 52%;
+		height: 500px;
+		left: 5%;
+	}
+}
+
+.content-block {
+	
+	width: 100%;
+	max-width: none;
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+		margin-top: 30px;
+		li {
+			padding-left: 0;
+			margin-top: 20px;
+			font-size: 19px;
+			line-height: 1.3;
+			max-width: 80%;
+			@include laptop_S {
+				max-width: 100%;
+			}
+		}
+	}
+	@include tablets {
+		margin-left: 0;
+	}
+	.spec-item {
+		margin-top: 0;
+	}
+}
+
+.content-cover {
+	position: relative;
+	padding-left: 90px;
+	//padding-right: 90px;
+	@include laptop_S {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+	&:after {
+		content: "01";
+		position: absolute;
+		top: -95px;
+		right: -40px;
+		opacity: 0.05;
+		color: #607ee8;
+		font-size: 216px;
+		font-weight: 700;
+		@include laptop_L {
+			font-size: 180px;
+		}
+		@include tablets {
+			font-size: 150px;
+		}
+		
+	}
+	@include phones_L {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.content-block__second {
+	padding-left: 0px;
+}
+
+.steps-title_small {
+	display: none;
+}
+
+.step-title__right:before {
+	right: calc(-100% + 7px);
+}
+
+.content-cover_second {
+	@include laptop_S {
+		padding-left: 100px;
+	}
+	@include tablets {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	@include phones_L{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&:after {
+		content: "02";
+		right: auto;
+		left: -40px;
+		@include tablets{
+			left: -30px;
+		}
+		@include phones_L{
+			left: -20px;
+		}
+	}
+}
+
+.step-title-second {
+	&:before {
+		left: calc(-100% - 36px);
+	}
+}
+
+.content-cover-third {
+	width: 56%;
+	&:after {
+		content: "03";
+		right: -35px;
+		@include phones_L{
+			right: -20px;
+		}
+	}
+	@include tablets{
+		padding-left: 20px;
+	}
+	@include phones_L {
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		//padding-left: 0;
+	}
+}
+
+.content-cover-fourth {
+	padding-left: 100px;
+	@include tablets {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	@include phones_L{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	&:after {
+		content: "04";
+		right: auto;
+		left: -40px;
+		@include tablets{
+			left: -30px;
+		}
+		@include phones_L{
+			top: -110px;
+			left: -20px;
+		}
+	}
+}
+
+.step-container-image-fourth {
+	top: 0;
+	height: 790px;
+	@include laptop_L {
+		height: 680px;
+		left: 58%
+	}
+	@include tablets {
+		top: 50%;
+		height: 500px;
+		left: auto;
+		right: 5%;
+	}
+	
+}
+
+.content-cover-fifth {
+	padding-left: 30px;
+	@include tablets{
+		padding-left: 50px;
+	}
+	@include phones_L{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&:after {
+		content: "05";
+		right: -70px;
+		@include laptop_L {
+			right: -30px;
+		}
+		@include phones_L{
+			right: -20px;
+			
+		}
+	}
+}
+
+.step-container-image-fifth {
+	height: 450px;
+	top: 100px;
+	@include laptop_L {
+		height: 420px;
+	}
+	@include laptop_M {
+		height: 390px;
+	}
+	@include laptop_S {
+		right: 57%;
+		top: 150px;
+	}
+	@include tablets {
+		top: 50%;
+		left: auto;
+		right: 60%;
+		height: 250px;
+	}
+}
+
+.content-cover-sixth {
+	padding-left: 90px;
+	@include tablets {
+		padding-left: 40px;
+		padding-right: 100px;
+	}
+	@include laptop_L{
+		padding-right: 20px;
+	}
+	@include phones_L{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	&:after {
+		content: "06";
+		right: auto;
+		left: -120px;
+		@include laptop_L {
+			left: -20px;
+		}
+	}
+}
+
+.step-container-image-sixth {
+	height: 465px;
+	top: 222px;
+	left: calc(50% + 36px);
+	@include laptop_L {
+		top: 160px;
+		height: 380px;
+	}
+	@include laptop_M {
+		height: 350px;
+	}
+	@include laptop_S {
+		top: 200px;
+		left: 55%;
+	}
+	@include tablets {
+		top: 50%;
+		left: 54%;
+		height:300px;
+		right: auto;
+	}
+	@include phones_landscape{
+		left: 58%;
+	}
+}
+
+.content-cover-seventh {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	&:after {
+		content: "07";
+		right: -70px;
+		top: -50px;
+		@include laptop_L {
+			right: -30px;
+		}
+		@include phones_L{
+			right: -20px;
+		}
+	}
+	@include tablets {
+	}
+}
+
+.step-container-seventh {
+	background-color: #fafbfb;
+	padding-bottom: 0;
+	@include tablets {
+		padding-top: 60px;
+	}
+
+}
+
+.step-title-seventh {
+	text-align: center;
+	margin-bottom: 40px;
+	&:before {
+		top: 50px;
+		right: calc(-100% - 40px);
+		@include laptop_L {
+			display: none;
+		}
+	}
+}
+
+.steps-title-comment {
+	margin-bottom: 60px;
+	text-align: center;
+	margin-top: 16px;
+	color: #342e2e;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.step-container_img {
+	@include phones_L {
+		max-width: 93.25%;
+		position: relative;
+		top: 0;
+		transform: none;
+		right: auto;
+		left: auto;
+		display: block;
+		margin: 50px auto 0;
+		height: auto;
+	}
+	
+}

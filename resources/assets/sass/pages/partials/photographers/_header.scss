@@ -1,0 +1,15 @@
+header{
+  padding: 26px 0 19px;
+}
+
+.header-container{
+  max-width: 1070px;
+  @include phones_L{
+    text-align: center;
+  }
+}
+
+.header-logo{
+  height: 24px;
+  width: auto;
+}

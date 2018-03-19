@@ -1,0 +1,47 @@
+.works-section {
+	margin-top: 160px;
+	margin-bottom: 116px;
+	background: transparent;
+	background-image: none;
+	@include laptop_L {
+		margin-top: 80px;
+	}
+	@include laptop_S {
+		margin-bottom: 0;
+	}
+	@include tablets {
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+	@include phones_L {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+.works-container {
+	@include phones_L {
+		padding-top: 0 !important;
+	}
+}
+
+.works-title {
+	margin-bottom: 72px;
+	color: #3fc1f7;
+	font-family: "Open Sans", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	@include laptop_S {
+		margin-bottom: 0;
+	}
+	@include tablets {
+		margin-bottom: 30px;
+	}
+	@include phones_L {
+		font-size: 40px;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+}

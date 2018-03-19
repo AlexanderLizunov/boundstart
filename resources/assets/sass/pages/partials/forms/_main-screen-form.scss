@@ -1,0 +1,145 @@
+.main-screen-form {
+	.form-header {
+		padding: 46px 40px 40px 32px;
+		background-color: rgba(216, 233, 242, .33);
+		border-radius: 5px 5px 0px 0px;
+		color: black;
+		font-family: "Open Sans", sans-serif;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 1.2;
+	}
+
+	.form-cover {
+		padding: 0 30px;
+	}
+
+	.item-cover {
+		height: 60px;
+		position: relative;
+		width: 100%;
+	}
+
+	.mauticform-has-error {
+		input {
+			border-bottom: 1px solid red !important;
+			//background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4OC44NzggNDg4Ljg3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg4Ljg3OCA0ODguODc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIxNDMuMjk0LDM0MC4wNTggNTAuODM3LDI0Ny42MDIgMCwyOTguNDM5IDEyMi4wMDksNDIwLjQ0NyAxMjIuMTQ5LDQyMC4zMDYgICAgIDE0NC40MjMsNDQyLjU4IDQ4OC44NzgsOTguMTIzIDQzNy4wNTUsNDYuMjk4ICAgIiBmaWxsPSIjYWIyNzI3Ii8+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)
+		}
+	}
+
+	.form-item {
+		background: transparent;
+		border-radius: 0;
+		font-family: "Open Sans", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		color: #020202;
+		display: block;
+		position: relative;
+		padding-left: 10px;
+		height: 100%;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #e8e8e8;
+		line-height: normal;
+		margin-top: 0;
+	}
+
+	body:last-child:not(:root:root) input[type="email"],
+	body:last-child:not(:root:root) input[type="text"],
+	body:last-child:not(:root:root) input[type="tel"] {
+		font-family: "Open Sans", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		color: #999999;
+		line-height: 1;
+	}
+
+	input[type="email"]::-webkit-input-placeholder,
+	input[type="text"]::-webkit-input-placeholder,
+	input[type="tel"]::-webkit-input-placeholder {
+		font-family: "Open Sans", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		color: #999999;
+		line-height: 1;
+	}
+
+	input[type="email"]::-moz-placeholder,
+	input[type="text"]::-moz-placeholder {
+		font-family: "Open Sans", sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		color: #999999;
+		line-height: 1;
+	}
+
+	input:not(:placeholder-shown) {
+		font-style: normal;
+		background-color: white;
+		border-bottom: 1px solid green;
+		//background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4OC44NzggNDg4Ljg3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg4Ljg3OCA0ODguODc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIxNDMuMjk0LDM0MC4wNTggNTAuODM3LDI0Ny42MDIgMCwyOTguNDM5IDEyMi4wMDksNDIwLjQ0NyAxMjIuMTQ5LDQyMC4zMDYgICAgIDE0NC40MjMsNDQyLjU4IDQ4OC44NzgsOTguMTIzIDQzNy4wNTUsNDYuMjk4ICAgIiBmaWxsPSIjOTFEQzVBIi8+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+	}
+
+	input {
+		outline: none;
+	}
+
+	input:-webkit-autofill {
+		-webkit-box-shadow: inset 0 0 0 50px #ffffff !important; /* Цвет фона */
+		-webkit-text-fill-color: #999999 !important; /* цвет текста */
+		color: #999999 !important; /* цвет текста */
+		//background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4OC44NzggNDg4Ljg3OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg4Ljg3OCA0ODguODc4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIxNDMuMjk0LDM0MC4wNTggNTAuODM3LDI0Ny42MDIgMCwyOTguNDM5IDEyMi4wMDksNDIwLjQ0NyAxMjIuMTQ5LDQyMC4zMDYgICAgIDE0NC40MjMsNDQyLjU4IDQ4OC44NzgsOTguMTIzIDQzNy4wNTUsNDYuMjk4ICAgIiBmaWxsPSIjOTFEQzVBIi8+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+
+	}
+
+	.button-cover {
+		height: auto;
+
+	}
+
+	.form-button {
+		position: relative;
+		background: transparent;
+		background-image: linear-gradient(97deg, #6488e2 0%, #6488e2 0%, #616ae6 100%);
+		border-radius: 20px;
+		box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.32);
+		display: block;
+		width: 70%;
+		height: auto;
+		margin: 60px auto 0;
+		text-align: center;
+		padding: 8px 0 14px;
+		cursor: pointer;
+		transition: .7s;
+		color: white;
+		font-family: "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		border: none;
+		@include tablets {
+			width: 90%;
+			max-width: none;
+		}
+		&:hover {
+			box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.32);
+
+		}
+		&:active {
+			bottom: -1px;
+			box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.32);
+
+		}
+	}
+
+	.mauticform-errormsg {
+		position: absolute;
+		bottom: -36px;
+		left: 0;
+		color: darkred;
+		width: 100%;
+		text-align: center;
+		height: 0;
+
+	}
+}

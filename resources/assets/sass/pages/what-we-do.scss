@@ -1,0 +1,114 @@
+@import "helpers/media";
+@import "helpers/mixin-bootstrap";
+@import "helpers/modals-bootstrap";
+@import "helpers/foundation";
+
+@import "helpers/generic-hack";
+@import "partials/footer";
+@import "partials/header";
+
+@import "partials/index/first-screen";
+@import "partials/index/steps";
+@import "partials/modals/get-demo";
+@import "partials/what-we-do/advantages";
+@import "partials/what-we-do/steps";
+
+//page style
+.custom-container {
+	//max-width: 1432px
+}
+
+.main-section {
+	background-image: none;
+	padding-bottom: 280px;
+	@include laptop_M {
+		padding-bottom: 120px;
+		height: auto;
+	}
+}
+
+h2 {
+	margin-bottom: 80px;
+	@include laptop_L {
+		max-width: none;
+	}
+	&:before {
+		@include laptop_S {
+			display: none;
+		}
+	}
+	@include phones_L {
+		font-size: 26px;
+	}
+}
+
+.main-bg-cover {
+	background-image: url("../img/images/wedo-main-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	@include phones_landscape{
+		background-size: auto 100% ;
+		background-position: top right;
+	}
+}
+
+.main-section-container {
+	//max-width: 1140px;
+	//padding-left: 56px;
+	//padding-right: 56px;
+	@include tablets {
+		padding: 0;
+	}
+}
+
+.main-img-bg {
+	display: none;
+}
+
+.main-title {
+	margin-bottom: 0;
+}
+
+.main-comment {
+	font-size: 22px;
+	margin-top: 15px;
+}
+
+.main-button {
+	margin-top: 90px;
+}
+
+.action-cover {
+	background-color: #fafbfb;
+	margin-top: -1px;
+}
+
+.action-container{
+	text-align: center;
+	padding: 100px 0 200px;
+}
+
+.action-title{
+	text-align: center;
+	color: #342e2e;
+	font-size:27px;
+	font-weight: 600;
+	line-height: 1.875rem;
+}
+
+.custom-action-button{
+	box-shadow: 3px 3px 18px rgba(0,0,0,.15);
+	margin-top: 50px;
+	color:white;
+	background-image: linear-gradient(75deg,#4c68db 0,#4c68db 2%,#4c68db 28%,#8968c0 100%);
+}
+
+.scroll-down-button{
+	bottom: -200px;
+	@include laptop_M{
+		bottom: -50px;
+	}
+	@include phones_landscape{
+		display: none;
+	}
+}

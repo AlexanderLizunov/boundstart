@@ -1,0 +1,191 @@
+.customers-section{
+	padding-top: 100px;
+	padding-bottom: 248px;
+	background-color: transparent;
+	overflow: hidden;
+	.content-block{
+		width: 100%;
+		max-width: none;
+		text-align: justify;
+	}
+	h2{
+		display: block;
+		text-align: center;
+		max-width: none;
+		&:before{
+			display: none;
+		}
+	}
+	.steps-title-comment {
+		margin-top: 8px;
+		display: block;
+		text-align: center;
+		color: #332a2a;
+		font-family: "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.advantages_item--sales{
+		vertical-align: top;
+		text-align: center;
+		display: inline-block;
+		padding-top: 0;
+		margin-top: 120px;
+		width: 31%;
+		position: relative;
+		min-height: 375px;
+		
+		@include laptop_S {
+			width: 32%;
+		}
+		@include tablets {
+			width: 45%;
+		}
+		@include phones_L {
+			width: 80%;
+			float: none;
+		}
+		.advantages-title,
+		.advantages-comment {
+			margin-top: 40px;
+			color: #332a2a;
+			font-family: "Open Sans", sans-serif;
+			font-size: 20px;
+			font-weight: 300;
+		}
+		.sales-item-button {
+			width: 90%;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			box-shadow: 4px 6px 11px 2px rgba(0, 0, 0, 0.2);
+			border-radius: 23px;
+			background-image: linear-gradient(75deg, #346aef 2%, #346aef 28%, #9d57e9 100%);
+			cursor: pointer;
+			color: #ffffff;
+			font-family: "Open Sans", sans-serif;
+			font-size: 21px;
+			font-weight: 400;
+			line-height: 48px;
+			border: none;
+			transform: translateX(-50%);
+			&:hover {
+				box-shadow: 4px 10px 11px 2px rgba(0, 0, 0, 0.2);
+			}
+			@include laptop_S {
+				font-size: 19px;
+			}
+		}
+		
+	}
+	.step-title-seventh {
+		margin-bottom: 0;
+	}
+	
+	@include phones_L {
+		padding-bottom: 90px;
+	}
+}
+
+.content-cover-seventh {
+	&:after {
+		display: none !important;
+	}
+}
+
+.sales-modal {
+	.modal-body {
+		padding: 0 0 40px 0;
+		//padding-bottom: 40px !important;
+	}
+	form{
+		margin: auto;
+		width: 94%;
+	}
+}
+
+.advantages-section {
+	padding: 5px 0 150px;
+	@include phones_L {
+		padding-bottom: 60px;
+	}
+}
+
+.advantages-container {
+	
+	margin: auto;
+	text-align: justify;
+	@include laptop_S{
+		width:88%;
+	}
+	@include tablets {
+		width: 93.75%;
+	}
+	@include phones_L {
+		text-align: center;
+	}
+}
+
+.advantages_item {
+	display: inline-block;
+	padding-top: 60px;
+	width: 30%;
+	max-width: 400px;
+	text-align: center;
+	vertical-align: top;
+	@include tablets{
+		padding-top: 50px;
+		width:32%;
+	}
+	@include phones_L {
+		display: block;
+		margin: 0 auto;
+		width: 60%;
+		padding-top: 60px;
+	}
+}
+
+.advantages_image {
+	display: block;
+	margin: auto;
+	height: 58px;
+	width: auto;
+}
+
+.advantages-title {
+	margin-top: 18px;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	@include tablets{
+		font-size:18px;
+	}
+	@include phones_landscape{
+		font-size: 20px;
+	}
+}
+
+.advantages-comment {
+	margin-top: 36px;
+	color: #342e2e;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	@include laptop_S{
+		font-size:18px;
+		
+	}
+	@include tablets{
+		font-size:18px;
+	}
+	@include phones_landscape{
+		font-size: 19px;
+	}
+}
+
+.spec-comment{
+	//max-width: 170px;
+	margin-left: auto;
+	margin-right: auto;
+}

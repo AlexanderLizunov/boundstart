@@ -1,0 +1,91 @@
+.advantages-section {
+	padding: 5px 0 150px;
+	@include phones_L {
+		padding-bottom: 60px;
+	}
+}
+
+.advantages-container {
+	
+	margin: auto;
+	text-align: justify;
+	@include laptop_S {
+		width: 88%;
+	}
+	@include tablets {
+		width: 93.75%;
+	}
+	@include phones_L {
+		text-align: center;
+	}
+}
+
+.advantages_item {
+	display: inline-block;
+	padding-top: 60px;
+	width: 30%;
+	max-width: 400px;
+	text-align: center;
+	vertical-align: top;
+	@include tablets {
+		padding-top: 50px;
+		width: 32%;
+	}
+	@include phones_L {
+		display: block;
+		//margin: 0 auto;
+		//width: 60%;
+		padding-top: 60px;
+		width: 50%;
+		float: left;
+	}
+}
+
+.advantages_image {
+	display: block;
+	margin: auto;
+	height: 58px;
+	width: auto;
+}
+
+.advantages-title {
+	margin-top: 18px;
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	@include tablets {
+		font-size: 18px;
+	}
+	@include phones_landscape {
+		font-size: 20px;
+	}
+}
+
+.advantages-comment {
+	margin-top: 36px;
+	color: #342e2e;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	@include laptop_S {
+		font-size: 18px;
+		
+	}
+	@include tablets {
+		font-size: 18px;
+	}
+	@include phones_landscape {
+		font-size: 19px;
+		min-height: 100px;
+	}
+	@include phones_M {
+		min-height: 130px;
+	}
+}
+
+.spec-comment {
+	//max-width: 170px;
+	margin-left: auto;
+	margin-right: auto;
+}

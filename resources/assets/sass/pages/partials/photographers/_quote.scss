@@ -1,0 +1,93 @@
+.quote-section {
+	background-size: cover;
+	padding: 90px 0 300px;
+	position: relative;
+	z-index: 1;
+	background-image: url("../img/images/photographers/sales-quote-bg.jpg");
+	@include laptop_L {
+		padding-bottom: 150px;
+	}
+	@include laptop_S {
+		padding-bottom: 90px;
+	}
+}
+
+.quote-container {
+	max-width: 951px;
+	text-align: right;
+}
+
+.quote-stars {
+	margin-top: 20px;
+	color: #f13a6b;
+	font-size: 43px;
+	text-align: center;
+	line-height: 1;
+}
+
+.quote-title {
+	text-shadow: 0 6px 41px rgba(0, 0, 1, 0.15);
+	color: #b8d7eb;
+	font-family: BELLABOO, sans-serif;
+	font-size: 116px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.1;
+	@include phones_L {
+		font-size: 80px;
+	}
+}
+
+.quote-text {
+	margin-top: 28px;
+	text-align: center;
+	line-height: 1.2;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+	&.quote-author {
+		text-align: right;
+	}
+	
+	@include tablets {
+		line-height: 30px;
+		margin-top: 30px;
+		font-size: 24px;
+	}
+	@include phones_L {
+		margin-top: 30px;
+		font-size: 21px;
+	}
+	
+}
+
+.quote-position {
+	margin-top: 30px;
+	color: #0e0e0e;
+	font-size: 23px;
+	font-weight: 700;
+	img {
+		height: 68px;
+		display: inline-block;
+	}
+	span {
+		margin-top: 15px;
+		margin-left: 22px;
+		display: inline-block;
+		vertical-align: top;
+		
+	}
+	@include tablets {
+		margin-top: 30px;
+		font-size: 26px;
+	}
+	@include phones_L {
+		display: inline-block;
+		max-width: 300px;
+		text-align: right;
+		font-size: 23px;
+	}
+}
+
+

@@ -1,0 +1,255 @@
+$form-item-height: 50px;
+$form-block-margin: 18px;
+$form-item-font-size: 14px;
+$place-holder-color: #333;
+$form-text-color: black;
+$base-text-color: #191919;
+$base-borders-color: #191919;
+$form-button-bg-color: #e6296e;
+$timer-number-color: #333;
+$timer-text-color: black;
+$form-item-cover-width: 49%;
+
+.form-cover {
+	margin: 32px auto 0;
+	padding: 12px 40px;
+	width: 100%;
+	//max-width: 600px;
+	background-color: rgba(255, 255, 255, .42);
+	text-align: justify;
+	//@include phones_landscape{
+	//  margin-top: 40px;
+	//}
+	@include phones_L {
+		background-size: 100%;
+		padding: 9px 30px 30px;
+	}
+}
+
+.form-block {
+	text-align: justify;
+	line-height: 1px;
+	padding: 0;
+	background-color: transparent;
+	display: block;
+	//box-shadow: 3px 5px 15px 1px rgba(0, 0, 0, 0.15);
+}
+
+.item-cover {
+	margin-top: $form-block-margin;
+	height: $form-item-height;
+	display: inline-block;
+	width: $form-item-cover-width;
+	vertical-align: top;
+	position: relative;
+	@include phones_L {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+.form-item {
+	padding-left: 20px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	color: $form-text-color;
+	//border: 1px solid $base-borders-color;
+	border: none;
+	font-size: $form-item-font-size;
+	font-weight: 300;
+	//box-shadow: 0 8px 27px rgba(0, 0, 0, 0.08);
+}
+
+.button-cover {
+	margin-top: 0;
+	width: 100%;
+	background: transparent;
+	text-align: right;
+	position: relative;
+	bottom: -35px;
+	@include phones_L {
+		text-align: right;
+		width: 100%;
+		margin-top: 25px;
+		bottom: 0;
+	}
+}
+
+.form-button {
+	display: inline-block;
+	width: 100%;
+	//display: block;
+	//width:60%;
+	margin: auto;
+	color: white;
+	text-align: center;
+	padding: 0;
+	@include phones_L {
+		width: 100%;
+	}
+}
+
+.mauticform-errormsg {
+	position: absolute;
+	top: -18px;
+	left: 0;
+	padding-left: 20px;
+	color: black;
+}
+
+.form-checkbox {
+	display: inline-block;
+	height: 24px;
+	width: 24px !important;
+	vertical-align: top;
+	position: absolute;
+	left: -30px;
+	top: -4px;
+}
+
+.form-checkbox-cover {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.form-checkbox-label {
+	display: block;
+	margin-top: 0;
+	vertical-align: top;
+	margin-left: 30px;
+	position: relative;
+	line-height: 1.2;
+	text-align: left;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	a {
+		text-decoration: underline;
+		color: black;
+		cursor: pointer;
+	}
+}
+
+
+
+select, input {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+
+.form-after-text{
+	margin-top: 10px;
+	color: #0b0a0a;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 16px;
+	text-align: right;
+	span{
+		font-weight: 900;
+		font-size: 31px;
+	}
+}
+
+.checkbox-error {
+	top: auto;
+	bottom: -16px;
+	left: 8px;
+}
+
+
+
+body:last-child:not(:root:root) input[type="email"],
+body:last-child:not(:root:root) input[type="text"],
+body:last-child:not(:root:root) input[type="tel"] {
+	color: $place-holder-color;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $form-item-font-size;
+	line-height: normal;
+}
+
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder {
+	color: $place-holder-color;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;;
+	font-size: $form-item-font-size;
+	line-height: normal;
+}
+
+input[type="email"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder {
+	color: $place-holder-color;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $form-item-font-size;
+	line-height: normal;
+}
+
+input:not(:placeholder-shown) {
+	font-style: normal;
+	background-color: #f6f9fa;
+	border: 1px solid #59a9a7;
+}
+
+input {
+	outline: none;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0 50px #f6f9fa !important; /* Цвет фона */
+	-webkit-text-fill-color: #999 !important; /* цвет текста */
+	color: #999 !important; /* цвет текста */
+}
+
+body:last-child:not(:root:root) .mauticform-errormsg {
+	bottom: -15px;
+}
+
+.form-button-2 {
+	margin: auto;
+	display: block;
+	border-radius: 0;
+	position: relative;
+	width: 50%;
+	height: 100%;
+	transition: .7s;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 0 !important;
+	background-color: $form-button-bg-color;
+	text-shadow: 0 6px 15px rgba(0, 0, 1, 0.15);
+	color: #ffffff;
+	font-family: "Proxima Nova", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	&:hover {
+		background-color: lighten(black, 10%);
+		color: white;
+	}
+	&:active {
+		background-color: white;
+		color: black;
+	}
+	@include phones_L{
+		width: 100%;
+	}
+}
+
+.mauticform-message{
+	display: block;
+	background-color: #e6296e;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5;
+}

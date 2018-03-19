@@ -1,0 +1,35 @@
+.promo-section{
+  padding: 105px 0 231px;
+  background: url("../img/images/photographers/sales-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.promo-title{
+  margin: 0;
+  text-shadow: 0 6px 41px rgba(0, 0, 1, 0.15);
+  color: #ffffff;
+  font-family: "Black Diamond", sans-serif;
+  font-size: 180px;
+  font-weight: 400;
+  text-align: center;
+  @include phones_L{
+    font-size: 128px;
+  }
+}
+
+.promo-container{
+  max-width: 780px;
+}
+
+.promo-title-small{
+  color: #abd8fe;
+  font-family: "Open Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  @include phones_L{
+    margin-top: 20px;
+    font-size: 36px;
+  }
+}

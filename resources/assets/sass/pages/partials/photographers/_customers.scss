@@ -1,0 +1,59 @@
+.customers-container {
+	margin-bottom: 40px;
+	@include laptop_M {
+		max-width: 60rem;
+	}
+}
+
+.slick-slide {
+	img {
+		margin: auto;
+		min-height: 70px;
+		max-width: 90%;
+	}
+}
+
+.slick-next,
+.slick-prev {
+	&:before {
+		color: #3fc1f7;
+	}
+}
+
+.slick-next {
+	@include tablets {
+		right: 0.4375rem;
+	}
+	@include phones_L {
+		display: none!important;
+	}
+	&:before {
+		content: ">";
+	}
+}
+
+.slick-prev {
+	@include tablets {
+		left: 0.4375rem;
+	}
+	@include phones_L {
+		display: none!important;
+	}
+	&:before {
+		content: "<";
+	}
+}
+
+.slider-content-block {
+	@include phones_L {
+		min-height: 27rem;
+	}
+	
+	@include phones_M {
+		min-height: 28rem;
+	}
+	
+	@include phones_S {
+		min-height: 30rem;
+	}
+}

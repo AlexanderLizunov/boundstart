@@ -1,0 +1,236 @@
+@import "helpers/media";
+@import "helpers/mixin-bootstrap";
+@import "helpers/modals-bootstrap";
+@import "helpers/foundation";
+@import "helpers/generic-hack";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/index/first-screen";
+@import "partials/main-screen-form-block";
+@import "partials/who-can-use";
+@import "partials/callback-form-block";
+@import "partials/modals/get-demo";
+@import "partials/index/portfolio";
+@import "partials/index/steps";
+@import "partials/what-we-do/advantages";
+@import "partials/index/team";
+@import "partials/what-we-do/steps";
+
+
+.main-screen-form-block {
+	.main-content-right {
+		padding-top: 100px;
+		padding-bottom: 52px;
+	}
+}
+.step-title-seventh {
+	max-width: none;
+}
+
+.sales-section {
+	padding-bottom: 0;
+	overflow: visible;
+	height: auto;
+	.video-cover {
+		display: none;
+	}
+	.main-section {
+		background-image: none;
+		padding-bottom: 280px;
+		@include laptop_M {
+			padding-bottom: 120px;
+			height: auto;
+		}
+	}
+	.main-content-right {
+		bottom: -2rem;
+	}
+	.command-title {
+		font-size: 1.5rem;
+	}
+}
+
+.scroll-down-button {
+	display: none;
+}
+
+.sales-what-we-do {
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 100px;
+	
+	.bound-container {
+		max-width: 1210px;
+		display: flex;
+		align-items: baseline;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+	.col-lg-3 {
+		margin-top: 80px;
+		width: 30%;
+		@include tablets {
+			width: 45%;
+			margin-top: 30px;
+		}
+		@include phones_L {
+			width: 100%;
+		}
+	}
+	.screen {
+		text-align: left;
+		@include phones_L {
+			text-align: center;
+		}
+		img {
+			max-width: 100%;
+			max-height: 328px;
+			display: block;
+			margin: auto;
+		}
+	}
+	.sales-step-num {
+		margin-top: 16px;
+		display: block;
+		width: 38px;
+		height: 38px;
+		color: #ffffff;
+		font-family: "Open Sans", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		border-radius: 50px;
+		text-align: center;
+		background-image: linear-gradient(-243deg, #425fd2 0%, #6147c2 100%);
+		padding-top: 8px;
+		padding-right: 1px;
+		position: relative;
+		left: -8px;
+		@include phones_L {
+			display: none;
+		}
+	}
+	.description {
+		min-height: 220px;
+		text-align: left;
+		.heading {
+			margin-top: 16px;
+			margin-bottom: 32px;
+			padding: 0;
+			width: 91%;
+			color: inherit;
+			line-height: 1;
+			text-align: left;
+			min-height: 40px;
+			@include phones_L {
+				min-height: auto;
+			}
+		}
+		p {
+			text-align: left;
+			font-size: 20px;
+			//line-height: 1.2;
+			//font-size: 20px;
+			font-weight: 300;
+			line-height: 30px;
+		}
+	}
+}
+
+.result-list {
+	li {
+		font-size: 22px !important;
+	}
+}
+
+#mauticform_wrapper_boundstartsalesmain {
+	.mauticform-errormsg {
+		bottom: 40px;
+		right: 0;
+		left: auto;
+		width: auto;
+	}
+}
+
+.advantages-container {
+	padding-bottom: 60px;
+}
+
+.customers-section {
+	.custom-container {
+		max-width: 1432px
+	}
+}
+
+.sales-team {
+	background-color: transparent;
+	.custom-container {
+		max-width: 1432px
+	}
+	.team-container {
+		padding-top: 100px;
+		padding-bottom: 70px;
+		.team-title {
+			margin-bottom: 0;
+		}
+		.gallery-block {
+			display: flex;
+			margin: 130px auto 0;
+			width: 80%;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			@include laptop_L {
+				width: 85%;
+				margin-top: 0;
+			}
+		}
+		.gallery-item {
+			width: 25%;
+			margin-top: 0;
+			
+			@include laptop_L {
+				width: 26%;
+				margin: 60px 0 0;
+			}
+			@include laptop_M {
+				width: 33%;
+				max-width: none;
+			}
+			@include laptop_S {
+				width: 34%;
+			}
+			@include tablets {
+				width: 48%;
+			}
+			@include phones_L {
+				width: 61%;
+			}
+		}
+	}
+}
+
+.sales-who-can-use {
+	.customers-section {
+		padding-bottom: 100px;
+	}
+}
+
+.custom-container {
+	&.works-bottom {
+		padding-bottom: 50px;
+		@include phones_L {
+			margin-top: 0;
+			padding-bottom: 20px;
+		}
+	}
+}
+
+.step-container-seventh {
+	padding-top: 70px;
+	overflow: hidden;
+}
+.step-title__right:before {
+	@include phones_L {
+		display: none;
+	}
+}
